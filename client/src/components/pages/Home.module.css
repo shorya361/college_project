@@ -1,0 +1,338 @@
+.Home_Section{
+    width:100%;
+    padding: 0 0rem;
+    height: 95vh;
+    background-image: linear-gradient(rgba(193, 192, 214, 0.911),rgba(72, 90, 248, 0.904)),url(../../assest/images/download.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+    
+.heading{
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    transform:translate(-40%,-40%);
+    text-align: center;
+}
+.h1{
+    margin-top: 60px;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:rgba(2, 1, 20, 0.911);
+}
+
+.h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color:rgba(2, 1, 20, 0.911);
+    margin-bottom: 50px;
+    clip-path: ;
+}
+
+.a{
+    margin-top: 40px;
+    padding: 1.5rem 5rem;
+    display: inline-block;
+    color: silver;
+    border-radius: 10rem;
+    background-color: rgba(2, 1, 20, 0.911);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
+    animation: moveInBottom 1s;
+    transition: all 1s;
+    position: relative;
+}
+
+
+.a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
+}
+
+.a:hover::after{
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0; 
+}
+
+
+.a::after{
+    content: "";
+    display: inline-block;
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    transition: all 1s;
+    border-radius: 10rem;
+    background-color:rgba(2, 1, 20, 0.911);
+}
+
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0; 
+        transform: translateY(3rem);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+.Section_Services{
+    background-color: rgb(156, 197, 252);
+    text-align: center;
+    margin: 0 5%;
+    
+}
+.Section_Service{
+    padding-top: 7%;
+    padding-bottom: 10%;
+    background-color: rgb(156, 197, 252);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2,45%);
+    grid-column-gap: 10px;
+    position: relative;
+}
+
+
+.img1{
+    width: 25%;
+    position: absolute;
+    left:5%;
+    outline-offset: 10px;
+}
+
+.img2{
+    position: absolute;
+    left: 10%;
+    width: 25%;
+    top:25%;
+    outline-offset: 10px;
+    transition: all .1s;
+}
+
+.img1:hover{
+    z-index: 30;
+    outline: 4px solid rgba(11, 69, 124, 0.925);
+    transform: scale(1.1);
+}
+
+.img2:hover{
+    z-index: 30;
+    outline: 4px solid rgba(11, 102, 187, 0.925);
+    transform: scale(1.1);
+}
+
+.p1{
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+
+.heading1{
+    display: inline-block;
+    margin-top: 80px;
+    font-size: 50px;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg,rgba(147, 147, 240, 0.945),rgba(24, 5, 99, 0.911));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+    transition: all .2s;
+}
+
+.heading1:hover{
+    transform: skewY(-.2deg) skewX(.1deg) scale(1.2);
+    text-shadow: .9rem 5rem 5rem rgba(black, .2);
+}
+
+
+.Section_Accesses{
+    background-color: rgba(5, 5, 112, 0.466);
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    position: relative;
+ }
+ .Section_Access{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: rgb(9, 45, 99));
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2,45%);
+    grid-column-gap: 10px;
+    position: relative;
+}
+.img3{
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    width: 320px;
+    height: 380px;
+    z-index: 10;
+    transition: all 1s;
+}
+
+
+.svg2{
+    z-index: 5;
+    position: absolute;
+    top: 40px;
+    right: 205px;
+    padding: 50px;
+    width: 370px;
+    height: 250px;
+    color: white;
+    transition: all 1s;
+    transform: scale(1.05);
+}
+
+.img3:hover{
+    transform: scale(1.1);
+    filter:blur(5px) brightness(60%);
+}
+
+.img3:hover + .svg2{
+    z-index: 20;
+    transform: scale(1.2);
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;} 
+} 
+
+.p2{
+    color: rgba(245, 245, 247, 0.856);
+    text-align: right;
+    font-size: 27px;
+    margin-left: 50px;
+}
+
+.heading2{
+    display: inline-block;
+    margin-top: 80px;
+    font-size: 45px;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg,rgba(254, 254, 255, 0.966),rgba(240, 250, 252, 0.966));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+    animation: moveLeft 1s;
+   transition: moveLeft 1s;
+}
+
+.heading2:hover {
+    transform: translateX(-30rem);
+    transform: translateX(2rem);
+    text-shadow: .9rem 5rem 5rem rgba(black, .2);
+}
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30rem);
+    }
+    80%{
+        transform: translateX(2rem);
+    }
+    100% { 
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+.Section_Offer{
+    margin: 0 5%;
+    background-color: rgba(126, 126, 170, 0.527);
+    text-align: center;
+    padding : 5%;
+    position: relative;
+}
+.Section_Offers{
+    display: grid;
+    grid-auto-flow: row;
+    font-size:25px;
+}
+
+.img{
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 3%;
+    padding : 10%;
+    transition: all 1s;
+}
+.img4{
+    background-image: linear-gradient(45deg,rgba(105, 105, 163, 0.808)
+    ,rgba(7, 42, 138, 0.589)),url(../../assest/images/medication.jpeg);
+    width: 95%;
+    height: 90%;
+    padding: 10%;
+    
+}
+.img5{
+    background-image: linear-gradient(45deg,rgba(67, 67, 136, 0.808),
+    rgba(6, 38, 124, 0.589))
+    ,url(../../assest/images/procedure.jpeg);
+    width: 95%;
+    height: 90%;
+    padding: 10%;
+}
+
+.img6{
+    background-image: linear-gradient(45deg,rgba(190, 190, 192, 0.808),rgba(10, 70, 235, 0.589)),
+    url(../../assest/images/allergy.jpeg);
+    width: 95%;
+    height: 90%;
+    padding: 10%;
+}
+
+.img4:hover{
+    transform: translateY(-12px) scale(1.05);
+}
+
+.img5:hover{
+    transform: translateY(-12px) scale(1.05);
+}
+
+.img6:hover{
+    transform: translateY(-12px) scale(1.05);
+}
+
+.bgvideo{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden;
+}
+
+.bgContent{
+   height: 100%;
+   width: 100%; 
+   object-fit: cover;
+}
+ 
+.svg1{
+    color: rgb(9, 45, 99);
+    font-size: 30px;
+    font-style: inherit;
+    width: 40%;
+    margin-right:10px ;
+}

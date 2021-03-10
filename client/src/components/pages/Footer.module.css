@@ -1,0 +1,49 @@
+.Footer{
+    width:  100%;
+    height: 50%;
+    margin-bottom: 0px;
+    background-color: slategrey;
+    
+}
+
+.img{
+    margin-top: 70px;
+    width: 15%;
+    height: 15%;
+    margin-left: 40%;
+    
+}
+
+.grid{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2,45%);
+    grid-column-gap: 6%;
+    font-size: 17px;
+    padding: 3%;
+}
+
+.ul{
+    padding:2%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    list-style: none;
+    font-weight: 500;
+}
+
+.list{
+   display: flex;
+   flex: 1;
+   margin-top: 25px;
+}
+
+.paragraph{
+    margin-top: 3px;
+    border-top: 1px solid white;
+}
+
+.paragraph_content{
+    padding-top: 2%;
+    margin-top: 25px;
+}
